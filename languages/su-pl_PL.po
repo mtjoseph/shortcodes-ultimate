@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Shortcodes Ultimate - Polish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-30 15:07+0400\n"
-"PO-Revision-Date: 2015-02-28 04:16+0100\n"
+"PO-Revision-Date: 2015-03-02 20:59+0100\n"
 "Last-Translator: Grzegorz Stalmierski <grzegorz.stalmierski@gmail.com>\n"
 "Language-Team: Grzegorz Stalmierski <grzegorz.stalmierski@gmail.com>\n"
 "Language: su\n"
@@ -60,7 +60,7 @@ msgstr "ponad 40 niesamowitych shortcode"
 
 #: inc/core/admin-views.php:22
 msgid "Power of CSS3 transitions"
-msgstr "Moc przejść CSS"
+msgstr "Moc transformacji CSS"
 
 #: inc/core/admin-views.php:23
 msgid "Handy shortcodes generator"
@@ -68,7 +68,7 @@ msgstr "Poręczny generator shortcode"
 
 #: inc/core/admin-views.php:24
 msgid "International"
-msgstr "Internacjonalizacja"
+msgstr "Języki narodowe"
 
 #: inc/core/admin-views.php:25
 msgid "Documented API"
@@ -80,7 +80,7 @@ msgstr "Czym jest shortcode?"
 
 #: inc/core/admin-views.php:30
 msgid "<strong>Shortcode</strong> is a WordPress-specific code that lets you do nifty things with very little effort."
-msgstr "<strong>Shortcode</strong>, to kod charakterystyczny dla WordPress'a, który pozwala Ci tworzyć -  przy niewielkim wysiłku - wspaniałe rzeczy. "
+msgstr "<strong>Shortcode</strong>, to charakterystyczny dla WordPress'a kod, który pozwala Ci tworzyć -  przy niewielkim wysiłku - wspaniałe rzeczy. "
 
 #: inc/core/admin-views.php:31
 msgid "Shortcodes can embed files or create objects that would normally require lots of complicated, ugly code in just one line. Shortcode = shortcut."
@@ -326,7 +326,7 @@ msgstr "Treść"
 #: inc/core/data.php:19
 #: inc/core/data.php:892
 msgid "Box"
-msgstr "Pole"
+msgstr "Tabliczka"
 
 #: inc/core/data.php:20
 msgid "Media"
@@ -402,11 +402,11 @@ msgstr "Układ kolumnowy"
 
 #: inc/core/data.php:83
 msgid "Media elements, YouTube, Vimeo, Screenr and self-hosted videos, audio player"
-msgstr "Pliki mediów, YouTube, Vimeo, Screenr oraz filmy z własnego hostingu, odtwarzacz audio"
+msgstr "Pliki mediów, YouTube, Vimeo, Screenr, filmy z własnego hostingu oraz odtwarzacz audio"
 
 #: inc/core/data.php:89
 msgid "Unlimited buttons"
-msgstr "Dowolne przyciski"
+msgstr "Przyciski bez limitów"
 
 #: inc/core/data.php:95
 msgid "Animations"
@@ -1427,7 +1427,7 @@ msgstr "Nazwa usługi"
 
 #: inc/core/data.php:863
 msgid "You can upload custom icon for this box"
-msgstr "Możesz dodać własną ikonę do tego pola"
+msgstr "Możesz dodać własną ikonę do tej tabliczki"
 
 #: inc/core/data.php:877
 msgid "Icon size"
@@ -1447,15 +1447,15 @@ msgstr "Pole usługi z tytułem"
 
 #: inc/core/data.php:898
 msgid "Box title"
-msgstr "Tytuł pola "
+msgstr "Tytuł tabliczki"
 
 #: inc/core/data.php:899
 msgid "Text for the box title"
-msgstr "Tekst tytułu pola"
+msgstr "Treść tytułu tabliczki"
 
 #: inc/core/data.php:912
 msgid "Box style preset"
-msgstr "Ustawienia wyglądu pola"
+msgstr "Ustawienia wyglądu tabliczki"
 
 #: inc/core/data.php:918
 #: inc/core/generator-views.php:99
@@ -1464,7 +1464,7 @@ msgstr "Kolor"
 
 #: inc/core/data.php:919
 msgid "Color for the box title and borders"
-msgstr "Kolor tytułu i obramowania pola"
+msgstr "Kolor tytułu i obramowania tabliczki"
 
 #: inc/core/data.php:925
 msgid "Title text color"
@@ -1472,19 +1472,19 @@ msgstr "Kolor tekstu tytułowego"
 
 #: inc/core/data.php:925
 msgid "Color for the box title text"
-msgstr "Kolor tekstu tytułowego, tego pola"
+msgstr "Kolor tekstu tytułowego, tej tabliczki"
 
 #: inc/core/data.php:934
 msgid "Box corners radius"
-msgstr "Promień narożników pola"
+msgstr "Promień narożników tabliczki"
 
 #: inc/core/data.php:942
 msgid "Box content"
-msgstr "Zawartość pola"
+msgstr "Zawartość tabliczki"
 
 #: inc/core/data.php:943
 msgid "Colored box with caption"
-msgstr "Kolorowe pole z nagłówkiem"
+msgstr "Kolorowa tabliczka z nagłówkiem"
 
 #: inc/core/data.php:948
 msgid "Note"
@@ -1508,7 +1508,7 @@ msgstr "Tekst notatki"
 
 #: inc/core/data.php:980
 msgid "Colored box"
-msgstr "Kolorowe pole"
+msgstr "Kolorowa tabliczka"
 
 #: inc/core/data.php:985
 msgid "Expand"
@@ -1727,7 +1727,7 @@ msgstr "Cień"
 
 #: inc/core/data.php:1173
 msgid "Adjust the shadow for content box"
-msgstr "Dostosuj cień, dla pola zawartości"
+msgstr "Dostosuj cień, dla zawartości pola"
 
 #: inc/core/data.php:1181
 msgid "Inline content"
@@ -2331,11 +2331,11 @@ msgstr "Wiadomość dla niezalogowanych użytkowników"
 
 #: inc/core/data.php:1855
 msgid "Box color"
-msgstr "Kolor pola"
+msgstr "Kolor tabliczki"
 
 #: inc/core/data.php:1855
 msgid "This color will applied only to box for not logged users"
-msgstr "Kolor ten zostanie użyty w polu, wyłącznie dla niezalogowanych użytkowników"
+msgstr "Kolor ten zostanie użyty na tabliczce, wyłącznie dla niezalogowanych użytkowników"
 
 #: inc/core/data.php:1858
 #: inc/core/shortcodes.php:853
@@ -3657,7 +3657,7 @@ msgstr "Pomijaj wartości domyślne"
 
 #: inc/core/load.php:65
 msgid "Enable this option and the generator will insert a shortcode without default attribute values that you have not changed. As a result, the generated code will be shorter."
-msgstr "Włączenie tej opcji spowoduje, że generator pominie w shortcode wartości domyśle, jeśli nie zostały zmienione. W wyniku tego, wygenerowany kod będzie krótszy. "
+msgstr "Włączenie tej opcji spowoduje, że generator pominie w shortcode wartości domyśle, jeśli nie zostały one zmienione. W wyniku tego, wygenerowany kod będzie krótszy. "
 
 #: inc/core/load.php:72
 msgid "Shortcodes prefix"
@@ -3715,7 +3715,7 @@ msgstr "Tytuł zakładki"
 
 #: inc/core/shortcodes.php:464
 msgid "This is box title"
-msgstr "To jest tytuł pola"
+msgstr "To jest tytuł tabliczki"
 
 #: inc/core/shortcodes.php:530
 msgid "please specify correct source"
@@ -3816,7 +3816,7 @@ msgstr "Skorzystaj z tego pola, aby dodać własne linki do slajdów w shortcode
 
 #: inc/core/vote.php:44
 msgid "Hello, my name is Vladimir Anokhin, and I am developer of plugin <b>Shortcodes Ultimate</b>.<br>If you like this plugin, please write a few words about it at the wordpress.org or twitter. It will help other people find this useful plugin more quickly.<br><b>Thank you!</b>"
-msgstr "Witaj, nazywam się Vladimir Anokhin, o jestem twórcą wtyczki <b>Shortcodes Ultimate</b>.<br>Jeśli spodoba Ci się ta wtyczka, napisz o niej - proszę, kilka słów na stronie wordpress.org lub twitterze. Dzięki temu inni odnajdą, tę użyteczną wtyczkę dużo szybciej.<br><b>Dziękuję!</b>"
+msgstr "Witaj, nazywam się Vladimir Anokhin, o jestem twórcą wtyczki <b>Shortcodes Ultimate</b>.<br>Jeśli podoba Ci się ta wtyczka, napisz o niej - proszę, kilka słów na stronie wordpress.org lub twitterze. Dzięki temu inni odnajdą, tę użyteczną wtyczkę dużo szybciej.<br><b>Dziękuję!</b>"
 
 #: inc/core/vote.php:46
 msgid "Rate plugin"
