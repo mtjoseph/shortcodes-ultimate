@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Shortcodes Ultimate - Polish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-30 15:07+0400\n"
-"PO-Revision-Date: 2015-03-03 23:04+0100\n"
+"PO-Revision-Date: 2015-03-03 23:33+0100\n"
 "Last-Translator: Grzegorz Stalmierski <grzegorz.stalmierski@gmail.com>\n"
 "Language-Team: Grzegorz Stalmierski <grzegorz.stalmierski@gmail.com>\n"
 "Language: su\n"
@@ -1402,7 +1402,7 @@ msgstr "Atrybut rel"
 
 #: inc/core/data.php:834
 msgid "Here you can add value for the rel attribute.<br>Example values: <b%value>nofollow</b>, <b%value>lightbox</b>"
-msgstr "Możesz tu podać wartość/ci atrybutu rel.<br>Przykładowe wartości: <b%value>nofollow</b>, <b%value>wyskakujące okienko</b>"
+msgstr "Możesz tu podać wartość/ci atrybutu rel.<br>Przykładowe wartości: <b%value>nofollow</b>, <b%value>lightbox</b>"
 
 #: inc/core/data.php:842
 msgid "Button text"
