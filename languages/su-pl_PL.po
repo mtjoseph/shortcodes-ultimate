@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Shortcodes Ultimate - Polish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-30 15:07+0400\n"
-"PO-Revision-Date: 2015-03-02 22:36+0100\n"
+"PO-Revision-Date: 2015-03-03 23:04+0100\n"
 "Last-Translator: Grzegorz Stalmierski <grzegorz.stalmierski@gmail.com>\n"
 "Language-Team: Grzegorz Stalmierski <grzegorz.stalmierski@gmail.com>\n"
 "Language: su\n"
@@ -326,7 +326,7 @@ msgstr "Treść"
 #: inc/core/data.php:19
 #: inc/core/data.php:892
 msgid "Box"
-msgstr "Tabliczka"
+msgstr "Pole"
 
 #: inc/core/data.php:20
 msgid "Media"
@@ -1402,7 +1402,7 @@ msgstr "Atrybut rel"
 
 #: inc/core/data.php:834
 msgid "Here you can add value for the rel attribute.<br>Example values: <b%value>nofollow</b>, <b%value>lightbox</b>"
-msgstr "Możesz tu podać wartość/ci atrybutu rel.<br>Przykładowe wartości: <b%value>nofollow</b>, <b%value>lightbox</b>"
+msgstr "Możesz tu podać wartość/ci atrybutu rel.<br>Przykładowe wartości: <b%value>nofollow</b>, <b%value>wyskakujące okienko</b>"
 
 #: inc/core/data.php:842
 msgid "Button text"
@@ -1447,15 +1447,15 @@ msgstr "Pole usługi z tytułem"
 
 #: inc/core/data.php:898
 msgid "Box title"
-msgstr "Tytuł tabliczki"
+msgstr "Tytuł pola"
 
 #: inc/core/data.php:899
 msgid "Text for the box title"
-msgstr "Treść tytułu tabliczki"
+msgstr "Treść tytułu pola"
 
 #: inc/core/data.php:912
 msgid "Box style preset"
-msgstr "Ustawienia wyglądu tabliczki"
+msgstr "Ustawienia wyglądu pola"
 
 #: inc/core/data.php:918
 #: inc/core/generator-views.php:99
@@ -1464,7 +1464,7 @@ msgstr "Kolor"
 
 #: inc/core/data.php:919
 msgid "Color for the box title and borders"
-msgstr "Kolor tytułu i obramowania tabliczki"
+msgstr "Kolor tytułu i obramowania pola"
 
 #: inc/core/data.php:925
 msgid "Title text color"
@@ -1472,19 +1472,19 @@ msgstr "Kolor tekstu tytułowego"
 
 #: inc/core/data.php:925
 msgid "Color for the box title text"
-msgstr "Kolor tekstu tytułowego, tej tabliczki"
+msgstr "Kolor tekstu w tytule tego pola"
 
 #: inc/core/data.php:934
 msgid "Box corners radius"
-msgstr "Promień narożników tabliczki"
+msgstr "Promień narożników pola"
 
 #: inc/core/data.php:942
 msgid "Box content"
-msgstr "Zawartość tabliczki"
+msgstr "Zawartość pola"
 
 #: inc/core/data.php:943
 msgid "Colored box with caption"
-msgstr "Kolorowa tabliczka z nagłówkiem"
+msgstr "Kolorowe pole z nagłówkiem"
 
 #: inc/core/data.php:948
 msgid "Note"
@@ -1508,7 +1508,7 @@ msgstr "Tekst notatki"
 
 #: inc/core/data.php:980
 msgid "Colored box"
-msgstr "Kolorowa tabliczka"
+msgstr "Kolorowe pole"
 
 #: inc/core/data.php:985
 msgid "Expand"
@@ -1609,7 +1609,7 @@ msgstr "Rozszerzalny blok tekstowy"
 #: inc/core/data.php:2223
 #: inc/core/data.php:2361
 msgid "Lightbox"
-msgstr "Lightbox"
+msgstr "Wyskakujące okienko"
 
 #: inc/core/data.php:1083
 msgid "Iframe"
@@ -1629,7 +1629,7 @@ msgstr "Rodzaj zawartości"
 
 #: inc/core/data.php:1089
 msgid "Select type of the lightbox window content"
-msgstr "Wybierz rodzaj zawartości okna lightbox'a"
+msgstr "Wybierz rodzaj zawartości wyskakującego okienka"
 
 #: inc/core/data.php:1093
 msgid "Content source"
@@ -1645,11 +1645,11 @@ msgstr "[%prefix_button] Kliknij aby obejrzeć wideo. [/%prefix_button]"
 
 #: inc/core/data.php:1103
 msgid "Lightbox window with custom content"
-msgstr "Okno lightbox'a z dowolną zawartością"
+msgstr "Wyskakujące okienko z dowolną zawartością"
 
 #: inc/core/data.php:1108
 msgid "Lightbox content"
-msgstr "Lightbox - zawartość"
+msgstr "Zawartość wyskakującego okienka"
 
 #: inc/core/data.php:1114
 #: inc/core/data.php:1819
@@ -1735,7 +1735,7 @@ msgstr "Zawartość inline"
 
 #: inc/core/data.php:1182
 msgid "Inline content for lightbox"
-msgstr "Zawartość inline dla lightbox'a"
+msgstr "Zawartość inline dla wyskakującego okienko"
 
 #: inc/core/data.php:1187
 msgid "Tooltip"
@@ -3715,7 +3715,7 @@ msgstr "Tytuł zakładki"
 
 #: inc/core/shortcodes.php:464
 msgid "This is box title"
-msgstr "To jest tytuł tabliczki"
+msgstr "To jest tytuł pola"
 
 #: inc/core/shortcodes.php:530
 msgid "please specify correct source"
@@ -3723,7 +3723,7 @@ msgstr "proszę, wprowadź właściwe źródło"
 
 #: inc/core/shortcodes.php:551
 msgid "please specify correct ID for this block. You should use same ID as in the Content source field (when inserting lightbox shortcode)"
-msgstr "proszę wprowadź właściwe ID dla tego bloku. Powinieneś użyć tego samego ID, co w polu Źródło treści (przy wstawianiu shortcode dla lightbox)"
+msgstr "proszę wprowadź właściwe ID dla tego bloku. Powinieneś użyć tego samego ID, co w polu Źródło treści (przy wstawianiu shortcode dla Wyskakującego okienka)"
 
 #: inc/core/shortcodes.php:618
 #: inc/core/shortcodes.php:622
