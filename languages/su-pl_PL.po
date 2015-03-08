@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Shortcodes Ultimate - Polish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-30 15:07+0400\n"
-"PO-Revision-Date: 2015-03-03 23:33+0100\n"
+"PO-Revision-Date: 2015-03-08 15:03+0100\n"
 "Last-Translator: Grzegorz Stalmierski <grzegorz.stalmierski@gmail.com>\n"
 "Language-Team: Grzegorz Stalmierski <grzegorz.stalmierski@gmail.com>\n"
 "Language: su\n"
@@ -418,7 +418,7 @@ msgstr "Przykłady zaawansowane"
 
 #: inc/core/data.php:106
 msgid "Interacting with posts shortcode"
-msgstr "Działanie na shortcode wpisów"
+msgstr "Działanie na skrótach shortcode dla wpisów"
 
 #: inc/core/data.php:112
 msgid "Nested shortcodes, shortcodes inside of attributes"
@@ -1645,7 +1645,7 @@ msgstr "[%prefix_button] Kliknij aby obejrzeć wideo. [/%prefix_button]"
 
 #: inc/core/data.php:1103
 msgid "Lightbox window with custom content"
-msgstr "Wyskakujące okienko z dowolną zawartością"
+msgstr "Wyskakujące okienko - typu lightbox, z dowolną zawartością"
 
 #: inc/core/data.php:1108
 msgid "Lightbox content"
@@ -1735,7 +1735,7 @@ msgstr "Zawartość inline"
 
 #: inc/core/data.php:1182
 msgid "Inline content for lightbox"
-msgstr "Zawartość inline dla wyskakującego okienko"
+msgstr "Zawartość inline dla wyskakującego okienka"
 
 #: inc/core/data.php:1187
 msgid "Tooltip"
@@ -1970,7 +1970,7 @@ msgstr "Autoodtwarzanie"
 #: inc/core/data.php:1428
 #: inc/core/data.php:1524
 msgid "Play video automatically when page is loaded"
-msgstr "Odtwarzaj automatycznie wideo z momentem załadowania strony"
+msgstr "Odtwarzaj automatycznie wideo z chwilą załadowania strony"
 
 #: inc/core/data.php:1351
 msgid "YouTube video"
@@ -2127,7 +2127,7 @@ msgstr "Url do strony Screenr z filmem"
 
 #: inc/core/data.php:1577
 msgid "Screenr video"
-msgstr "Film ze Screenr-a"
+msgstr "Film z portalu Screenr"
 
 #: inc/core/data.php:1582
 msgid "Dailymotion"
@@ -2139,7 +2139,7 @@ msgstr "Url do strony Dailymotion z filmem"
 
 #: inc/core/data.php:1619
 msgid "Start the playback of the video automatically after the player load. May not work on some mobile OS versions"
-msgstr "Odtwarzaj automatycznie wideo z momentem załadowania strony. Może nie działać na niektórych urządzeniach mobilnych."
+msgstr "Odtwarzaj automatycznie wideo z chwilą załadowania strony. Może nie działać na niektórych urządzeniach mobilnych."
 
 #: inc/core/data.php:1625
 msgid "HTML color of the background of controls elements"
@@ -2217,7 +2217,7 @@ msgstr "Szerokość odtwarzacza. Możesz określić szerokość w procentach, a 
 #: inc/core/data.php:1701
 #: inc/core/data.php:1771
 msgid "Play file automatically when page is loaded"
-msgstr "Odtwarzaj automatycznie nagranie, z momentem załadowania strony"
+msgstr "Odtwarzaj automatycznie nagranie, z chwilą załadowania strony"
 
 #: inc/core/data.php:1707
 #: inc/core/data.php:1777
@@ -3433,7 +3433,7 @@ msgstr "Ten shortcode pozwala wyświetlać treść, wyłącznie w określonym pr
 
 #: inc/core/data.php:3022
 msgid "Please pay special attention to the descriptions, which are located below each text field. It will save you a lot of time"
-msgstr "Zwróć szczególną uwagę na opisy, znajdujące się pod każdym z pól tekstowych. Pozwoli Ci, to oszczędzić dużo czasu"
+msgstr "Zwróć szczególną uwagę na opisy, znajdujące się pod każdym z pól tekstowych. Pozwoli Ci to oszczędzić dużo czasu"
 
 #: inc/core/data.php:3022
 msgid "By default, the content of this shortcode will be visible all the time. By using fields below, you can add some limitations. For example, if you type 1-5 in the Days of the week field, content will be only shown from Monday to Friday. Using the same principles, you can limit content visibility from years to seconds."
