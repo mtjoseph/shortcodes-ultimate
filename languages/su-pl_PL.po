@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Shortcodes Ultimate - Polish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-30 15:07+0400\n"
-"PO-Revision-Date: 2015-02-28 04:16+0100\n"
+"PO-Revision-Date: 2015-03-08 15:03+0100\n"
 "Last-Translator: Grzegorz Stalmierski <grzegorz.stalmierski@gmail.com>\n"
 "Language-Team: Grzegorz Stalmierski <grzegorz.stalmierski@gmail.com>\n"
 "Language: su\n"
@@ -60,7 +60,7 @@ msgstr "ponad 40 niesamowitych shortcode"
 
 #: inc/core/admin-views.php:22
 msgid "Power of CSS3 transitions"
-msgstr "Moc przejść CSS"
+msgstr "Moc transformacji CSS"
 
 #: inc/core/admin-views.php:23
 msgid "Handy shortcodes generator"
@@ -68,7 +68,7 @@ msgstr "Poręczny generator shortcode"
 
 #: inc/core/admin-views.php:24
 msgid "International"
-msgstr "Internacjonalizacja"
+msgstr "Języki narodowe"
 
 #: inc/core/admin-views.php:25
 msgid "Documented API"
@@ -80,7 +80,7 @@ msgstr "Czym jest shortcode?"
 
 #: inc/core/admin-views.php:30
 msgid "<strong>Shortcode</strong> is a WordPress-specific code that lets you do nifty things with very little effort."
-msgstr "<strong>Shortcode</strong>, to kod charakterystyczny dla WordPress'a, który pozwala Ci tworzyć -  przy niewielkim wysiłku - wspaniałe rzeczy. "
+msgstr "<strong>Shortcode</strong>, to charakterystyczny dla WordPress'a kod, który pozwala Ci tworzyć -  przy niewielkim wysiłku - wspaniałe rzeczy. "
 
 #: inc/core/admin-views.php:31
 msgid "Shortcodes can embed files or create objects that would normally require lots of complicated, ugly code in just one line. Shortcode = shortcut."
@@ -402,11 +402,11 @@ msgstr "Układ kolumnowy"
 
 #: inc/core/data.php:83
 msgid "Media elements, YouTube, Vimeo, Screenr and self-hosted videos, audio player"
-msgstr "Pliki mediów, YouTube, Vimeo, Screenr oraz filmy z własnego hostingu, odtwarzacz audio"
+msgstr "Pliki mediów, YouTube, Vimeo, Screenr, filmy z własnego hostingu oraz odtwarzacz audio"
 
 #: inc/core/data.php:89
 msgid "Unlimited buttons"
-msgstr "Dowolne przyciski"
+msgstr "Przyciski bez limitów"
 
 #: inc/core/data.php:95
 msgid "Animations"
@@ -418,7 +418,7 @@ msgstr "Przykłady zaawansowane"
 
 #: inc/core/data.php:106
 msgid "Interacting with posts shortcode"
-msgstr "Działanie na shortcode wpisów"
+msgstr "Działanie na skrótach shortcode dla wpisów"
 
 #: inc/core/data.php:112
 msgid "Nested shortcodes, shortcodes inside of attributes"
@@ -1447,11 +1447,11 @@ msgstr "Pole usługi z tytułem"
 
 #: inc/core/data.php:898
 msgid "Box title"
-msgstr "Tytuł pola "
+msgstr "Tytuł pola"
 
 #: inc/core/data.php:899
 msgid "Text for the box title"
-msgstr "Tekst tytułu pola"
+msgstr "Treść tytułu pola"
 
 #: inc/core/data.php:912
 msgid "Box style preset"
@@ -1472,7 +1472,7 @@ msgstr "Kolor tekstu tytułowego"
 
 #: inc/core/data.php:925
 msgid "Color for the box title text"
-msgstr "Kolor tekstu tytułowego, tego pola"
+msgstr "Kolor tekstu w tytule tego pola"
 
 #: inc/core/data.php:934
 msgid "Box corners radius"
@@ -1609,7 +1609,7 @@ msgstr "Rozszerzalny blok tekstowy"
 #: inc/core/data.php:2223
 #: inc/core/data.php:2361
 msgid "Lightbox"
-msgstr "Lightbox"
+msgstr "Wyskakujące okienko"
 
 #: inc/core/data.php:1083
 msgid "Iframe"
@@ -1629,7 +1629,7 @@ msgstr "Rodzaj zawartości"
 
 #: inc/core/data.php:1089
 msgid "Select type of the lightbox window content"
-msgstr "Wybierz rodzaj zawartości okna lightbox'a"
+msgstr "Wybierz rodzaj zawartości wyskakującego okienka"
 
 #: inc/core/data.php:1093
 msgid "Content source"
@@ -1645,11 +1645,11 @@ msgstr "[%prefix_button] Kliknij aby obejrzeć wideo. [/%prefix_button]"
 
 #: inc/core/data.php:1103
 msgid "Lightbox window with custom content"
-msgstr "Okno lightbox'a z dowolną zawartością"
+msgstr "Wyskakujące okienko - typu lightbox, z dowolną zawartością"
 
 #: inc/core/data.php:1108
 msgid "Lightbox content"
-msgstr "Lightbox - zawartość"
+msgstr "Zawartość wyskakującego okienka"
 
 #: inc/core/data.php:1114
 #: inc/core/data.php:1819
@@ -1727,7 +1727,7 @@ msgstr "Cień"
 
 #: inc/core/data.php:1173
 msgid "Adjust the shadow for content box"
-msgstr "Dostosuj cień, dla pola zawartości"
+msgstr "Dostosuj cień, dla zawartości pola"
 
 #: inc/core/data.php:1181
 msgid "Inline content"
@@ -1735,7 +1735,7 @@ msgstr "Zawartość inline"
 
 #: inc/core/data.php:1182
 msgid "Inline content for lightbox"
-msgstr "Zawartość inline dla lightbox'a"
+msgstr "Zawartość inline dla wyskakującego okienka"
 
 #: inc/core/data.php:1187
 msgid "Tooltip"
@@ -1970,7 +1970,7 @@ msgstr "Autoodtwarzanie"
 #: inc/core/data.php:1428
 #: inc/core/data.php:1524
 msgid "Play video automatically when page is loaded"
-msgstr "Odtwarzaj automatycznie wideo z momentem załadowania strony"
+msgstr "Odtwarzaj automatycznie wideo z chwilą załadowania strony"
 
 #: inc/core/data.php:1351
 msgid "YouTube video"
@@ -2127,7 +2127,7 @@ msgstr "Url do strony Screenr z filmem"
 
 #: inc/core/data.php:1577
 msgid "Screenr video"
-msgstr "Film ze Screenr-a"
+msgstr "Film z portalu Screenr"
 
 #: inc/core/data.php:1582
 msgid "Dailymotion"
@@ -2139,7 +2139,7 @@ msgstr "Url do strony Dailymotion z filmem"
 
 #: inc/core/data.php:1619
 msgid "Start the playback of the video automatically after the player load. May not work on some mobile OS versions"
-msgstr "Odtwarzaj automatycznie wideo z momentem załadowania strony. Może nie działać na niektórych urządzeniach mobilnych."
+msgstr "Odtwarzaj automatycznie wideo z chwilą załadowania strony. Może nie działać na niektórych urządzeniach mobilnych."
 
 #: inc/core/data.php:1625
 msgid "HTML color of the background of controls elements"
@@ -2217,7 +2217,7 @@ msgstr "Szerokość odtwarzacza. Możesz określić szerokość w procentach, a 
 #: inc/core/data.php:1701
 #: inc/core/data.php:1771
 msgid "Play file automatically when page is loaded"
-msgstr "Odtwarzaj automatycznie nagranie, z momentem załadowania strony"
+msgstr "Odtwarzaj automatycznie nagranie, z chwilą załadowania strony"
 
 #: inc/core/data.php:1707
 #: inc/core/data.php:1777
@@ -2319,7 +2319,7 @@ msgstr "Użytkownicy"
 #: inc/core/data.php:1849
 #: inc/core/shortcodes.php:850
 msgid "This content is for registered users only. Please %login%."
-msgstr "Treść dostępna jedynie dla zarejestrowanych użytkowników. Prosimy o  %zalogowanie się%."
+msgstr "Treść dostępna jedynie dla zarejestrowanych użytkowników. Prosimy o zalogowanie się."
 
 #: inc/core/data.php:1850
 msgid "Message"
@@ -3433,7 +3433,7 @@ msgstr "Ten shortcode pozwala wyświetlać treść, wyłącznie w określonym pr
 
 #: inc/core/data.php:3022
 msgid "Please pay special attention to the descriptions, which are located below each text field. It will save you a lot of time"
-msgstr "Zwróć szczególną uwagę na opisy, znajdujące się pod każdym z pól tekstowych. Pozwoli Ci, to oszczędzić dużo czasu"
+msgstr "Zwróć szczególną uwagę na opisy, znajdujące się pod każdym z pól tekstowych. Pozwoli Ci to oszczędzić dużo czasu"
 
 #: inc/core/data.php:3022
 msgid "By default, the content of this shortcode will be visible all the time. By using fields below, you can add some limitations. For example, if you type 1-5 in the Days of the week field, content will be only shown from Monday to Friday. Using the same principles, you can limit content visibility from years to seconds."
@@ -3657,7 +3657,7 @@ msgstr "Pomijaj wartości domyślne"
 
 #: inc/core/load.php:65
 msgid "Enable this option and the generator will insert a shortcode without default attribute values that you have not changed. As a result, the generated code will be shorter."
-msgstr "Włączenie tej opcji spowoduje, że generator pominie w shortcode wartości domyśle, jeśli nie zostały zmienione. W wyniku tego, wygenerowany kod będzie krótszy. "
+msgstr "Włączenie tej opcji spowoduje, że generator pominie w shortcode wartości domyśle, jeśli nie zostały one zmienione. W wyniku tego, wygenerowany kod będzie krótszy. "
 
 #: inc/core/load.php:72
 msgid "Shortcodes prefix"
@@ -3723,7 +3723,7 @@ msgstr "proszę, wprowadź właściwe źródło"
 
 #: inc/core/shortcodes.php:551
 msgid "please specify correct ID for this block. You should use same ID as in the Content source field (when inserting lightbox shortcode)"
-msgstr "proszę wprowadź właściwe ID dla tego bloku. Powinieneś użyć tego samego ID, co w polu Źródło treści (przy wstawianiu shortcode dla lightbox)"
+msgstr "proszę wprowadź właściwe ID dla tego bloku. Powinieneś użyć tego samego ID, co w polu Źródło treści (przy wstawianiu shortcode dla Wyskakującego okienka)"
 
 #: inc/core/shortcodes.php:618
 #: inc/core/shortcodes.php:622
@@ -3816,7 +3816,7 @@ msgstr "Skorzystaj z tego pola, aby dodać własne linki do slajdów w shortcode
 
 #: inc/core/vote.php:44
 msgid "Hello, my name is Vladimir Anokhin, and I am developer of plugin <b>Shortcodes Ultimate</b>.<br>If you like this plugin, please write a few words about it at the wordpress.org or twitter. It will help other people find this useful plugin more quickly.<br><b>Thank you!</b>"
-msgstr "Witaj, nazywam się Vladimir Anokhin, o jestem twórcą wtyczki <b>Shortcodes Ultimate</b>.<br>Jeśli spodoba Ci się ta wtyczka, napisz o niej - proszę, kilka słów na stronie wordpress.org lub twitterze. Dzięki temu inni odnajdą, tę użyteczną wtyczkę dużo szybciej.<br><b>Dziękuję!</b>"
+msgstr "Witaj, nazywam się Vladimir Anokhin, o jestem twórcą wtyczki <b>Shortcodes Ultimate</b>.<br>Jeśli podoba Ci się ta wtyczka, napisz o niej - proszę, kilka słów na stronie wordpress.org lub twitterze. Dzięki temu inni odnajdą, tę użyteczną wtyczkę dużo szybciej.<br><b>Dziękuję!</b>"
 
 #: inc/core/vote.php:46
 msgid "Rate plugin"
