@@ -164,7 +164,7 @@ class Su_Generator {
 				foreach ( $shortcode['atts'] as $attr_name => $attr_info ) {
 					// Prepare default value
 					$default = (string) ( isset( $attr_info['default'] ) ) ? $attr_info['default'] : '';
-					$attr_info['name'] = (isset( $attr_info['name'] )) ? $attr_info['name'] : $attr_name;
+					$attr_info['name'] = ( isset( $attr_info['name'] ) ) ? $attr_info['name'] : $attr_name;
 					$return .= '<div class="su-generator-attr-container' . $skip . '" data-default="' . esc_attr( $default ) . '">';
 					$return .= '<h5>' . $attr_info['name'] . '</h5>';
 					// Create field types
@@ -243,7 +243,7 @@ class Su_Generator {
 
 	public static function presets( $actions ) {
 		ob_start();
-		?>
+?>
 <div class="su-generator-presets alignright" data-shortcode="<?php echo sanitize_key( $_REQUEST['shortcode'] ); ?>">
 	<a href="javascript:void(0);" class="button button-large su-gp-button"><i class="fa fa-bars"></i> <?php _e( 'Presets', 'su' ); ?></a>
 	<div class="su-gp-popup">
@@ -273,7 +273,7 @@ class Su_Generator {
 		// Presets has been found
 		if ( is_array( $presets ) && count( $presets ) ) {
 			// Print the presets
-			foreach( $presets as $preset ) {
+			foreach ( $presets as $preset ) {
 				echo '<span data-id="' . $preset['id'] . '"><em>' . stripslashes( $preset['name'] ) . '</em> <i class="fa fa-times"></i></span>';
 			}
 			// Hide default text
