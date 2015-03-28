@@ -1,5 +1,4 @@
-jQuery(document).ready(function ($) {
-
+jQuery(document).ready(function($) {
 	// Prepare data
 	var $generator = $('#su-generator'),
 		$search = $('#su-generator-search'),
@@ -12,9 +11,8 @@ jQuery(document).ready(function ($) {
 		$result = $('#su-generator-result'),
 		$selected = $('#su-generator-selected'),
 		mce_selection = '';
-
 	// Generator button
-	$('body').on('click', '.su-generator-button', function (e) {
+	$('body').on('click', '.su-generator-button', function(e) {
 		e.preventDefault();
 		// Save the target
 		window.su_generator_target = $(this).data('target');
@@ -25,11 +23,11 @@ jQuery(document).ready(function ($) {
 			type: 'inline',
 			alignTop: true,
 			callbacks: {
-				open: function () {
+				open: function() {
 					// Open queried shortcode
 					if (shortcode) $choice.filter('[data-shortcode="' + shortcode + '"]').trigger('click');
 					// Focus search field when popup is opened
-					else window.setTimeout(function () {
+					else window.setTimeout(function() {
 						$search.focus();
 					}, 200);
 					// Change z-index
@@ -39,7 +37,7 @@ jQuery(document).ready(function ($) {
 						format: "text"
 					}) : '';
 				},
-				close: function () {
+				close: function() {
 					// Clear search field
 					$search.val('');
 					// Hide settings
@@ -59,9 +57,8 @@ jQuery(document).ready(function ($) {
 			}
 		}).magnificPopup('open');
 	});
-
 	// Filters
-	$filters.click(function (e) {
+	$filters.click(function(e) {
 		// Prepare data
 		var filter = $(this).data('filter');
 		// If filter All, show all choices
@@ -76,7 +73,7 @@ jQuery(document).ready(function ($) {
 				opacity: 0.2
 			});
 			// Find searched choices and show
-			$choice.each(function () {
+			$choice.each(function() {
 				// Get shortcode name
 				var group = $(this).data('group');
 				// Show choice if matched
@@ -87,9 +84,8 @@ jQuery(document).ready(function ($) {
 		}
 		e.preventDefault();
 	});
-
 	// Go to home link
-	$('#su-generator').on('click', '.su-generator-home', function (e) {
+	$('#su-generator').on('click', '.su-generator-home', function(e) {
 		// Clear search field
 		$search.val('');
 		// Hide settings
@@ -107,18 +103,16 @@ jQuery(document).ready(function ($) {
 		$search.focus();
 		e.preventDefault();
 	});
-
 	// Generator close button
-	$('#su-generator').on('click', '.su-generator-close', function (e) {
+	$('#su-generator').on('click', '.su-generator-close', function(e) {
 		// Close popup
 		$.magnificPopup.close();
 		// Prevent default action
 		e.preventDefault();
 	});
-
 	// Search field
 	$search.on({
-		focus: function () {
+		focus: function() {
 			// Clear field
 			$(this).val('');
 			// Hide settings
@@ -133,8 +127,8 @@ jQuery(document).ready(function ($) {
 			// Show filters
 			$filter.show();
 		},
-		blur: function () {},
-		keyup: function (e) {
+		blur: function() {},
+		keyup: function(e) {
 			var $first = $('.su-generator-choice-first:first'),
 				val = $(this).val(),
 				regex = new RegExp(val, 'gi');
@@ -149,7 +143,7 @@ jQuery(document).ready(function ($) {
 				opacity: 0.2
 			}).removeClass('su-generator-choice-first');
 			// Find searched choices and show
-			$choice.each(function () {
+			$choice.each(function() {
 				// Get shortcode name
 				var id = $(this).data('shortcode'),
 					name = $(this).data('name'),
@@ -167,9 +161,8 @@ jQuery(document).ready(function ($) {
 			});
 		}
 	});
-
 	// Click on shortcode choice
-	$choice.on('click', function (e) {
+	$choice.on('click', function(e) {
 		// Prepare data
 		var shortcode = $(this).data('shortcode');
 		// Load shortcode options
@@ -180,7 +173,7 @@ jQuery(document).ready(function ($) {
 				action: 'su_generator_settings',
 				shortcode: shortcode
 			},
-			beforeSend: function () {
+			beforeSend: function() {
 				// Hide preview box
 				$('#su-generator-preview').hide();
 				// Hide choices panel
@@ -192,7 +185,7 @@ jQuery(document).ready(function ($) {
 				// Hide filters
 				$filter.hide();
 			},
-			success: function (data) {
+			success: function(data) {
 				// Hide loading animation
 				$settings.removeClass('su-generator-loading');
 				// Insert new HTML
@@ -200,7 +193,7 @@ jQuery(document).ready(function ($) {
 				// Apply selected text to the content field
 				if (typeof mce_selection !== 'undefined' && mce_selection !== '') $('#su-generator-content').val(mce_selection);
 				// Init range pickers
-				$('.su-generator-range-picker').each(function (index) {
+				$('.su-generator-range-picker').each(function(index) {
 					var $picker = $(this),
 						$val = $picker.find('input'),
 						min = $val.attr('min'),
@@ -212,24 +205,23 @@ jQuery(document).ready(function ($) {
 						step: step,
 						range: [min, max]
 					});
-					$val.attr('type', 'text').show();
-					$val.on('keyup blur', function (e) {
+					$val.show();
+					$val.on('keyup blur', function(e) {
 						$val.simpleSlider('setValue', $val.val());
 					});
 				});
 				// Init color pickers
-				$('.su-generator-select-color').each(function (index) {
-					$(this).find('.su-generator-select-color-wheel').filter(':first').farbtastic('.su-generator-select-color-value:eq(' +
-						index + ')');
-					$(this).find('.su-generator-select-color-value').focus(function () {
+				$('.su-generator-select-color').each(function(index) {
+					$(this).find('.su-generator-select-color-wheel').filter(':first').farbtastic('.su-generator-select-color-value:eq(' + index + ')');
+					$(this).find('.su-generator-select-color-value').focus(function() {
 						$('.su-generator-select-color-wheel:eq(' + index + ')').show();
 					});
-					$(this).find('.su-generator-select-color-value').blur(function () {
+					$(this).find('.su-generator-select-color-value').blur(function() {
 						$('.su-generator-select-color-wheel:eq(' + index + ')').hide();
 					});
 				});
 				// Init image sourse pickers
-				$('.su-generator-isp').each(function () {
+				$('.su-generator-isp').each(function() {
 					var $picker = $(this),
 						$sources = $picker.find('.su-generator-isp-sources'),
 						$source = $picker.find('.su-generator-isp-source'),
@@ -241,14 +233,14 @@ jQuery(document).ready(function ($) {
 						$val = $picker.find('.su-generator-attr'),
 						frame;
 					// Update hidden value
-					var update = function () {
+					var update = function() {
 							var val = 'none',
 								ids = '',
 								source = $sources.val();
 							// Media library
 							if (source === 'media') {
 								var images = [];
-								$images.find('span').each(function (i) {
+								$images.find('span').each(function(i) {
 									images[i] = $(this).data('id');
 								});
 								if (images.length > 0) ids = images.join(',');
@@ -276,7 +268,7 @@ jQuery(document).ready(function ($) {
 							$val.val(val).trigger('change');
 						}
 						// Switch source
-					$sources.on('change', function (e) {
+					$sources.on('change', function(e) {
 						var source = $(this).val();
 						e.preventDefault();
 						$source.removeClass('su-generator-isp-source-open');
@@ -284,16 +276,16 @@ jQuery(document).ready(function ($) {
 						update();
 					});
 					// Remove image
-					$images.on('click', 'span i', function () {
-						$(this).parent('span').css('border-color', '#f03').fadeOut(300, function () {
+					$images.on('click', 'span i', function() {
+						$(this).parent('span').css('border-color', '#f03').fadeOut(300, function() {
 							$(this).remove();
 							update();
 						});
 					});
 					// Add image
-					$add_media.click(function (e) {
+					$add_media.click(function(e) {
 						e.preventDefault();
-						if (typeof (frame) !== 'undefined') frame.close();
+						if (typeof(frame) !== 'undefined') frame.close();
 						frame = wp.media.frames.su_media_frame_1 = wp.media({
 							title: su_generator.isp_media_title,
 							library: {
@@ -304,10 +296,10 @@ jQuery(document).ready(function ($) {
 							},
 							multiple: true
 						});
-						frame.on('select', function () {
+						frame.on('select', function() {
 							var files = frame.state().get('selection').toJSON();
 							$images.find('em').remove();
-							$.each(files, function (i) {
+							$.each(files, function(i) {
 								$images.append('<span data-id="' + this.id + '" title="' + this.title + '"><img src="' + this.url + '" alt="" /><i class="fa fa-times"></i></span>');
 							});
 							update();
@@ -318,7 +310,7 @@ jQuery(document).ready(function ($) {
 						revert: 200,
 						containment: $picker,
 						tolerance: 'pointer',
-						stop: function () {
+						stop: function() {
 							update();
 						}
 					});
@@ -326,7 +318,7 @@ jQuery(document).ready(function ($) {
 					$cats.on('change', update);
 					$terms.on('change', update);
 					// Select taxonomy
-					$taxes.on('change', function () {
+					$taxes.on('change', function() {
 						var $cont = $(this).parents('.su-generator-isp-source'),
 							tax = $(this).val();
 						// Remove terms
@@ -347,12 +339,12 @@ jQuery(document).ready(function ($) {
 									'multiple': true,
 									'size': 10
 								},
-								beforeSend: function () {
+								beforeSend: function() {
 									if (typeof ajax_term_select === 'object') ajax_term_select.abort();
 									$terms.html('').attr('disabled', true).hide();
 									$cont.addClass('su-generator-loading');
 								},
-								success: function (data) {
+								success: function(data) {
 									$terms.html(data).attr('disabled', false).show();
 									$cont.removeClass('su-generator-loading');
 								}
@@ -361,15 +353,15 @@ jQuery(document).ready(function ($) {
 					});
 				});
 				// Init media buttons
-				$('.su-generator-upload-button').each(function () {
+				$('.su-generator-upload-button').each(function() {
 					var $button = $(this),
 						$val = $(this).parents('.su-generator-attr-container').find('input:text'),
 						file;
-					$button.on('click', function (e) {
+					$button.on('click', function(e) {
 						e.preventDefault();
 						e.stopPropagation();
 						// If the frame already exists, reopen it
-						if (typeof (file) !== 'undefined') file.close();
+						if (typeof(file) !== 'undefined') file.close();
 						// Create WP media frame.
 						file = wp.media.frames.su_media_frame_2 = wp.media({
 							// Title of media manager frame
@@ -382,7 +374,7 @@ jQuery(document).ready(function ($) {
 							multiple: false
 						});
 						//callback for selected image
-						file.on('select', function () {
+						file.on('select', function() {
 							var attachment = file.state().get('selection').first().toJSON();
 							$val.val(attachment.url).trigger('change');
 						});
@@ -391,14 +383,13 @@ jQuery(document).ready(function ($) {
 					});
 				});
 				// Init icon pickers
-				$('.su-generator-icon-picker-button').each(function () {
+				$('.su-generator-icon-picker-button').each(function() {
 					var $button = $(this),
 						$field = $(this).parents('.su-generator-attr-container'),
 						$val = $field.find('.su-generator-attr'),
 						$picker = $field.find('.su-generator-icon-picker'),
 						$filter = $picker.find('input:text');
-
-					$button.click(function (e) {
+					$button.click(function(e) {
 						$picker.toggleClass('su-generator-icon-picker-visible');
 						$filter.val('').trigger('keyup');
 						if ($picker.hasClass('su-generator-icon-picker-loaded')) return;
@@ -410,36 +401,36 @@ jQuery(document).ready(function ($) {
 								action: 'su_generator_get_icons'
 							},
 							dataType: 'html',
-							beforeSend: function () {
+							beforeSend: function() {
 								// Show loading animation
 								$picker.addClass('su-generator-loading');
 								// Add loaded class
 								$picker.addClass('su-generator-icon-picker-loaded');
 							},
-							success: function (data) {
+							success: function(data) {
 								$picker.append(data);
 								var $icons = $picker.children('i');
-								$icons.click(function (e) {
+								$icons.click(function(e) {
 									$val.val('icon: ' + $(this).attr('title'));
 									$picker.removeClass('su-generator-icon-picker-visible');
 									$val.trigger('change');
 									e.preventDefault();
 								});
 								$filter.on({
-									keyup: function () {
+									keyup: function() {
 										var val = $(this).val(),
 											regex = new RegExp(val, 'gi');
 										// Hide all choices
 										$icons.hide();
 										// Find searched choices and show
-										$icons.each(function () {
+										$icons.each(function() {
 											// Get shortcode name
 											var name = $(this).attr('title');
 											// Show choice if matched
 											if (name.match(regex) !== null) $(this).show();
 										});
 									},
-									focus: function () {
+									focus: function() {
 										$(this).val('');
 										$icons.show();
 									}
@@ -451,7 +442,7 @@ jQuery(document).ready(function ($) {
 					});
 				});
 				// Init switches
-				$('.su-generator-switch').click(function (e) {
+				$('.su-generator-switch').click(function(e) {
 					// Prepare data
 					var $switch = $(this),
 						$value = $switch.parent().children('input'),
@@ -468,7 +459,7 @@ jQuery(document).ready(function ($) {
 					}
 					e.preventDefault();
 				});
-				$('.su-generator-switch-value').on('change', function () {
+				$('.su-generator-switch-value').on('change', function() {
 					// Prepare data
 					var $value = $(this),
 						$switch = $value.parent().children('.su-generator-switch'),
@@ -479,7 +470,7 @@ jQuery(document).ready(function ($) {
 					else if (value === 'no') $switch.removeClass('su-generator-switch-yes').addClass('su-generator-switch-no');
 				});
 				// Init tax_term selects
-				$('select#su-generator-attr-taxonomy').on('change', function () {
+				$('select#su-generator-attr-taxonomy').on('change', function() {
 					var $taxonomy = $(this),
 						tax = $taxonomy.val(),
 						$terms = $('select#su-generator-attr-tax_term');
@@ -493,13 +484,13 @@ jQuery(document).ready(function ($) {
 							noselect: true
 						},
 						dataType: 'html',
-						beforeSend: function () {
+						beforeSend: function() {
 							// Check previous requests
 							if (typeof window.su_generator_get_terms === 'object') window.su_generator_get_terms.abort();
 							// Show loading animation
 							$terms.parent().addClass('su-generator-loading');
 						},
-						success: function (data) {
+						success: function(data) {
 							// Remove previous options
 							$terms.find('option').remove();
 							// Append new options
@@ -510,7 +501,7 @@ jQuery(document).ready(function ($) {
 					});
 				});
 				// Init shadow pickers
-				$('.su-generator-shadow-picker').each(function (index) {
+				$('.su-generator-shadow-picker').each(function(index) {
 					var $picker = $(this),
 						$fields = $picker.find('.su-generator-shadow-picker-field input'),
 						$hoff = $picker.find('.su-generator-sp-hoff'),
@@ -524,17 +515,17 @@ jQuery(document).ready(function ($) {
 						$val = $picker.find('.su-generator-attr');
 					// Init color picker
 					$color.wheel.farbtastic($color.value);
-					$color.value.focus(function () {
+					$color.value.focus(function() {
 						$color.wheel.show();
 					});
-					$color.value.blur(function () {
+					$color.value.blur(function() {
 						$color.wheel.hide();
 					});
 					// Handle text fields
-					$fields.on('change blur keyup', function () {
+					$fields.on('change blur keyup', function() {
 						$val.val($hoff.val() + 'px ' + $voff.val() + 'px ' + $blur.val() + 'px ' + $color.value.val()).trigger('change');
 					});
-					$val.on('keyup', function () {
+					$val.on('keyup', function() {
 						var value = $(this).val().split(' ');
 						// Value is correct
 						if (value.length === 4) {
@@ -547,7 +538,7 @@ jQuery(document).ready(function ($) {
 					});
 				});
 				// Init border pickers
-				$('.su-generator-border-picker').each(function (index) {
+				$('.su-generator-border-picker').each(function(index) {
 					var $picker = $(this),
 						$fields = $picker.find('.su-generator-border-picker-field input, .su-generator-border-picker-field select'),
 						$width = $picker.find('.su-generator-bp-width'),
@@ -560,17 +551,17 @@ jQuery(document).ready(function ($) {
 						$val = $picker.find('.su-generator-attr');
 					// Init color picker
 					$color.wheel.farbtastic($color.value);
-					$color.value.focus(function () {
+					$color.value.focus(function() {
 						$color.wheel.show();
 					});
-					$color.value.blur(function () {
+					$color.value.blur(function() {
 						$color.wheel.hide();
 					});
 					// Handle text fields
-					$fields.on('change blur keyup', function () {
+					$fields.on('change blur keyup', function() {
 						$val.val($width.val() + 'px ' + $style.val() + ' ' + $color.value.val()).trigger('change');
 					});
-					$val.on('keyup', function () {
+					$val.on('keyup', function() {
 						var value = $(this).val().split(' ');
 						// Value is correct
 						if (value.length === 3) {
@@ -582,7 +573,7 @@ jQuery(document).ready(function ($) {
 					});
 				});
 				// Remove skip class when setting is changed
-				$settings.find('.su-generator-attr').on('change keyup blur', function () {
+				$settings.find('.su-generator-attr').on('change keyup blur', function() {
 					var $cnt = $(this).parents('.su-generator-attr-container'),
 						_default = $cnt.data('default'),
 						val = $(this).val();
@@ -591,7 +582,7 @@ jQuery(document).ready(function ($) {
 					else $cnt.addClass('su-generator-skip');
 				});
 				// Init value setters
-				$('.su-generator-set-value').click(function (e) {
+				$('.su-generator-set-value').click(function(e) {
 					$(this).parents('.su-generator-attr-container').find('input').val($(this).text()).trigger('change');
 				});
 				// Save selected value
@@ -605,11 +596,11 @@ jQuery(document).ready(function ($) {
 						id: 'last_used',
 						shortcode: shortcode
 					},
-					beforeSend: function () {
+					beforeSend: function() {
 						// Show loading animation
 						// $settings.addClass('su-generator-loading');
 					},
-					success: function (data) {
+					success: function(data) {
 						// Remove loading animation
 						// $settings.removeClass('su-generator-loading');
 						// Set new settings
@@ -623,9 +614,8 @@ jQuery(document).ready(function ($) {
 			dataType: 'html'
 		});
 	});
-
 	// Insert shortcode
-	$('#su-generator').on('click', '.su-generator-insert', function (e) {
+	$('#su-generator').on('click', '.su-generator-insert', function(e) {
 		// Prepare data
 		var shortcode = parse();
 		// Save current settings to presets
@@ -656,9 +646,8 @@ jQuery(document).ready(function ($) {
 		// if ($target.length > 0) $target.val($target.val() + shortcode);
 		// }
 	});
-
 	// Preview shortcode
-	$('#su-generator').on('click', '.su-generator-toggle-preview', function (e) {
+	$('#su-generator').on('click', '.su-generator-toggle-preview', function(e) {
 		// Prepare data
 		var $preview = $('#su-generator-preview'),
 			$button = $(this);
@@ -667,7 +656,7 @@ jQuery(document).ready(function ($) {
 		// Show preview box
 		$preview.addClass('su-generator-loading').show();
 		// Bind updating on settings changes
-		$settings.find('input, textarea, select').on('change keyup blur', function () {
+		$settings.find('input, textarea, select').on('change keyup blur', function() {
 			update_preview();
 		});
 		// Update preview box
@@ -675,22 +664,20 @@ jQuery(document).ready(function ($) {
 		// Prevent default action
 		e.preventDefault();
 	});
-
 	var gp_hover_timer;
-
 	// Presets manager - mouseenter
-	$('#su-generator').on('mouseenter click', '.su-generator-presets', function () {
+	$('#su-generator').on('mouseenter click', '.su-generator-presets', function() {
 		clearTimeout(gp_hover_timer);
 		$('.su-gp-popup').show();
 	});
 	// Presets manager - mouseleave
-	$('#su-generator').on('mouseleave', '.su-generator-presets', function () {
-		gp_hover_timer = window.setTimeout(function () {
+	$('#su-generator').on('mouseleave', '.su-generator-presets', function() {
+		gp_hover_timer = window.setTimeout(function() {
 			$('.su-gp-popup').fadeOut(200);
 		}, 600);
 	});
 	// Presets manager - add new preset
-	$('#su-generator').on('click', '.su-gp-new', function (e) {
+	$('#su-generator').on('click', '.su-gp-new', function(e) {
 		// Prepare data
 		var $container = $(this).parents('.su-generator-presets'),
 			$list = $('.su-gp-list'),
@@ -708,7 +695,7 @@ jQuery(document).ready(function ($) {
 		}
 	});
 	// Presets manager - load preset
-	$('#su-generator').on('click', '.su-gp-list span', function (e) {
+	$('#su-generator').on('click', '.su-gp-list span', function(e) {
 		// Prepare data
 		var shortcode = $('.su-generator-presets').data('shortcode'),
 			id = $(this).data('id'),
@@ -726,11 +713,11 @@ jQuery(document).ready(function ($) {
 				id: id,
 				shortcode: shortcode
 			},
-			beforeSend: function () {
+			beforeSend: function() {
 				// Disable insert button
 				$insert.addClass('button-primary-disabled').attr('disabled', true);
 			},
-			success: function (data) {
+			success: function(data) {
 				// Enable insert button
 				$insert.removeClass('button-primary-disabled').attr('disabled', false);
 				// Set new settings
@@ -743,7 +730,7 @@ jQuery(document).ready(function ($) {
 		e.stopPropagation();
 	});
 	// Presets manager - remove preset
-	$('#su-generator').on('click', '.su-gp-list i', function (e) {
+	$('#su-generator').on('click', '.su-gp-list i', function(e) {
 		// Prepare data
 		var $list = $(this).parents('.su-gp-list'),
 			$preset = $(this).parent('span'),
@@ -759,31 +746,29 @@ jQuery(document).ready(function ($) {
 		// Prevent default action
 		e.preventDefault();
 	});
-
 	/**
 	 * Create new preset with specified name from current settings
 	 */
 	function add_preset(id, name) {
-		// Prepare shortcode name and current settings
-		var shortcode = $('.su-generator-presets').data('shortcode'),
-			settings = get();
-		// Perform AJAX request
-		$.ajax({
-			type: 'POST',
-			url: ajaxurl,
-			data: {
-				action: 'su_generator_add_preset',
-				id: id,
-				name: name,
-				shortcode: shortcode,
-				settings: settings
-			}
-		});
-	}
-
-	/**
-	 * Remove preset by ID
-	 */
+			// Prepare shortcode name and current settings
+			var shortcode = $('.su-generator-presets').data('shortcode'),
+				settings = get();
+			// Perform AJAX request
+			$.ajax({
+				type: 'POST',
+				url: ajaxurl,
+				data: {
+					action: 'su_generator_add_preset',
+					id: id,
+					name: name,
+					shortcode: shortcode,
+					settings: settings
+				}
+			});
+		}
+		/**
+		 * Remove preset by ID
+		 */
 	function remove_preset(id) {
 		// Get current shortcode name
 		var shortcode = $('.su-generator-presets').data('shortcode');
@@ -809,7 +794,7 @@ jQuery(document).ready(function ($) {
 		// Open shortcode
 		result += '[' + prefix + query;
 		// Add shortcode attributes
-		$settings.each(function () {
+		$settings.each(function() {
 			// Prepare field and value
 			var $this = $(this),
 				value = '';
@@ -838,7 +823,7 @@ jQuery(document).ready(function ($) {
 			content = $('#su-generator-content').val(),
 			data = {};
 		// Add shortcode attributes
-		$settings.each(function (i) {
+		$settings.each(function(i) {
 			// Prepare field and value
 			var $this = $(this),
 				value = '',
@@ -863,7 +848,7 @@ jQuery(document).ready(function ($) {
 		var $settings = $('#su-generator-settings .su-generator-attr'),
 			$content = $('#su-generator-content');
 		// Loop through settings
-		$settings.each(function () {
+		$settings.each(function() {
 			var $this = $(this),
 				name = $this.attr('name');
 			// Data contains value for this field
@@ -878,7 +863,6 @@ jQuery(document).ready(function ($) {
 		// Update preview
 		update_preview();
 	}
-
 	var update_preview_timer,
 		update_preview_request;
 
@@ -895,7 +879,7 @@ jQuery(document).ready(function ($) {
 		if (shortcode === previous && !forced) return;
 		// Run timer to filter often calls
 		window.clearTimeout(update_preview_timer);
-		update_preview_timer = window.setTimeout(function () {
+		update_preview_timer = window.setTimeout(function() {
 			update_preview_request = $.ajax({
 				type: 'POST',
 				url: ajaxurl,
@@ -904,13 +888,13 @@ jQuery(document).ready(function ($) {
 					action: 'su_generator_preview',
 					shortcode: shortcode
 				},
-				beforeSend: function () {
+				beforeSend: function() {
 					// Abort previous requests
 					if (typeof update_preview_request === 'object') update_preview_request.abort();
 					// Show loading animation
 					$preview.addClass('su-generator-loading').html('');
 				},
-				success: function (data) {
+				success: function(data) {
 					// Hide loading animation and set new HTML
 					$preview.html(data).removeClass('su-generator-loading');
 				},
@@ -920,5 +904,4 @@ jQuery(document).ready(function ($) {
 		// Save shortcode to div
 		$result.text(shortcode);
 	}
-
 });

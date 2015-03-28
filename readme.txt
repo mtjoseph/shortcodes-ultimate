@@ -107,6 +107,9 @@ Upgrade normally
 
 == Changelog ==
 
+= 4.9.5 =
+* Fixed: JS error (blocking shortcodes settings) on WordPress 3.5
+
 = 4.9.4 =
 * Updated: Japanese translation
 * Updated: Polish translation
