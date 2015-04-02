@@ -109,6 +109,7 @@ Upgrade normally
 
 = 4.9.5 =
 * Fixed: JS error (blocking shortcodes settings) on WordPress 3.5
+* Fixed: minor improvement for slider/gallery posts query. [Forum topic](https://wordpress.org/support/topic/slider-code-suggestion)
 
 = 4.9.4 =
 * Updated: Japanese translation
