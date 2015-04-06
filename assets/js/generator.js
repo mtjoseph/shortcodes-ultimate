@@ -11,6 +11,12 @@ jQuery(document).ready(function($) {
 		$result = $('#su-generator-result'),
 		$selected = $('#su-generator-selected'),
 		mce_selection = '';
+	// Hotkey
+	if (typeof $.hotkeys == 'object' && $.hotkeys.version === '(beta)(0.0.3)' && su_generator.hotkey) {
+		$.hotkeys.add(su_generator.hotkey, function() {
+			$('.su-generator-button').trigger('click');
+		});
+	}
 	// Generator button
 	$('body').on('click', '.su-generator-button', function(e) {
 		e.preventDefault();
@@ -129,9 +135,11 @@ jQuery(document).ready(function($) {
 		},
 		blur: function() {},
 		keyup: function(e) {
+			// Prepare vars
 			var $first = $('.su-generator-choice-first:first'),
 				val = $(this).val(),
-				regex = new RegExp(val, 'gi');
+				regex = new RegExp(val, 'gi'),
+				best = 0;
 			// Hotkey action
 			if (e.keyCode === 13 && $first.length > 0) {
 				e.preventDefault();
@@ -142,23 +150,43 @@ jQuery(document).ready(function($) {
 			$choice.css({
 				opacity: 0.2
 			}).removeClass('su-generator-choice-first');
-			// Find searched choices and show
+			// Loop and highlight choices
 			$choice.each(function() {
-				// Get shortcode name
-				var id = $(this).data('shortcode'),
-					name = $(this).data('name'),
-					desc = $(this).data('desc'),
-					group = $(this).data('group');
-				// Show choice if matched
-				if ((id + name + desc + group).match(regex) !== null) {
+				// Get choice data
+				var data = $(this).data(),
+					id = data.shortcode,
+					name = data.name,
+					desc = data.desc,
+					group = data.group,
+					matches = ([id, name, desc, group].join(' ')).match(regex);
+				// Highlight choice if matched
+				if (matches !== null) {
+					// Highlight current choice
 					$(this).css({
 						opacity: 1
-					}).removeClass('su-generator-choice-first');
-					if (val === id || val === name || val === name.toLowerCase()) {
+					});
+					// Check for exact match
+					if (val === id) {
+						// Remove primary class from all choices
+						$choice.removeClass('su-generator-choice-first');
+						// Add primary class to the current choice
 						$(this).addClass('su-generator-choice-first');
+						// Prevent selecting by matches number
+						best = 999;
+					}
+					// Check matches length
+					else if (matches.length > best) {
+						// Remove primary class from all choices
+						$choice.removeClass('su-generator-choice-first');
+						// Add primary class to the current choice
+						$(this).addClass('su-generator-choice-first');
+						// Save the score
+						best = matches.length;
 					}
 				}
 			});
+			// Remove primary class if search field is empty
+			if (val === '') $choice.removeClass('su-generator-choice-first');
 		}
 	});
 	// Click on shortcode choice
