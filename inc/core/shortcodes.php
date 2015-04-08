@@ -956,7 +956,7 @@ class Su_Shortcodes {
 			), $atts, 'document' );
 		if ( $atts['file'] !== null ) $atts['url'] = $atts['file'];
 		su_query_asset( 'css', 'su-media-shortcodes' );
-		return '<div class="su-document su-responsive-media-' . $atts['responsive'] . '"><iframe src="http://docs.google.com/viewer?embedded=true&url=' . $atts['url'] . '" width="' . $atts['width'] . '" height="' . $atts['height'] . '" class="su-document' . su_ecssc( $atts ) . '"></iframe></div>';
+		return '<div class="su-document su-responsive-media-' . $atts['responsive'] . '"><iframe src="//docs.google.com/viewer?embedded=true&url=' . $atts['url'] . '" width="' . $atts['width'] . '" height="' . $atts['height'] . '" class="su-document' . su_ecssc( $atts ) . '"></iframe></div>';
 	}
 
 	public static function gmap( $atts = null, $content = null ) {

@@ -109,6 +109,9 @@ Upgrade normally
 
 == Changelog ==
 
+= 4.9.7 =
+* Added: [document] is now compatible with https
+
 = 4.9.6 =
 * Fixed: Quick fix for disabled custom css since previous update
 
