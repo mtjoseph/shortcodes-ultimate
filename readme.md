@@ -1,5 +1,5 @@
 Shortcodes Ultimate for WordPress
-================================
+=================================
 
 Supercharge your site with mega pack of shortcodes.
 Real swiss army knife for WordPress.
