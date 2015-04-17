@@ -111,6 +111,7 @@ Upgrade normally
 
 = 4.9.7 =
 * Added: [document] is now compatible with https
+* Fixed: carousel items width calculation
 
 = 4.9.6 =
 * Fixed: Quick fix for disabled custom css since previous update

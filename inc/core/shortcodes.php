@@ -1094,7 +1094,7 @@ class Su_Shortcodes {
 			// Create slides
 			foreach ( (array) $slides as $slide ) {
 				// Crop the image
-				$image = su_image_resize( $slide['image'], round( $atts['width'] / $atts['items'] ), $atts['height'] );
+				$image = su_image_resize( $slide['image'], ( round( $atts['width'] / $atts['items'] ) - 18 ), $atts['height'] );
 				// Prepare slide title
 				$title = ( $atts['title'] === 'yes' && $slide['title'] ) ? '<span class="su-carousel-slide-title">' . stripslashes( $slide['title'] ) . '</span>' : '';
 				// Open slide
