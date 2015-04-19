@@ -315,6 +315,7 @@ class Su_Shortcodes {
 				'desc'        => '',
 				'onclick'     => '',
 				'rel'         => '',
+				'title'       => '',
 				'class'       => ''
 			), $atts, 'button' );
 
@@ -434,8 +435,10 @@ class Su_Shortcodes {
 		$atts['onclick'] = ( $atts['onclick'] ) ? ' onClick="' . $atts['onclick'] . '"' : '';
 		// Prepare rel attribute
 		$atts['rel'] = ( $atts['rel'] ) ? ' rel="' . $atts['rel'] . '"' : '';
+		// Prepare title attribute
+		$atts['title'] = ( $atts['title'] ) ? ' title="' . $atts['title'] . '"' : '';
 		su_query_asset( 'css', 'su-content-shortcodes' );
-		return $before . '<a href="' . su_scattr( $atts['url'] ) . '" class="' . implode( $classes, ' ' ) . '" style="' . implode( $a_css, ';' ) . '" target="_' . $atts['target'] . '"' . $atts['onclick'] . $atts['rel'] . '><span style="' . implode( $span_css, ';' ) . '">' . do_shortcode( $content ) . $desc . '</span></a>' . $after;
+		return $before . '<a href="' . su_scattr( $atts['url'] ) . '" class="' . implode( $classes, ' ' ) . '" style="' . implode( $a_css, ';' ) . '" target="_' . $atts['target'] . '"' . $atts['onclick'] . $atts['rel'] . $atts['title'] . '><span style="' . implode( $span_css, ';' ) . '">' . do_shortcode( $content ) . $desc . '</span></a>' . $after;
 	}
 
 	public static function service( $atts = null, $content = null ) {
