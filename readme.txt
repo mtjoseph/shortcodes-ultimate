@@ -113,6 +113,7 @@ Upgrade normally
 * Added: [document] is now compatible with https
 * Fixed: carousel items width calculation
 * Added: new attribute for [button title=""], [forum topic](https://wordpress.org/support/topic/how-add-title-tag-to-a-button)
+* Fixed: stripslashes for [button] content
 
 = 4.9.6 =
 * Fixed: Quick fix for disabled custom css since previous update
