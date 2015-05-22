@@ -67,6 +67,7 @@ With this plugin you can easily create tabs, buttons, boxes, different sliders, 
 * Ja, [Stranger](#)
 * Sk, [Patrik Žec (PATWIST)](http://patwist.com/)
 * Cz, [Punc00](http://nuze.cz/)
+* Se, [Javier Marcilla](http://ninjaseo.es/)
 
 Have a translation? [Contact me](http://gndev.info/feedback/)
 
@@ -108,6 +109,9 @@ Upgrade normally
 
 
 == Changelog ==
+
+= 4.9.8 =
+* Added: Spanish translation
 
 = 4.9.7 =
 * Added: [document] is now compatible with https
