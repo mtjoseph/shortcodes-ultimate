@@ -112,6 +112,9 @@ Upgrade normally
 
 = 4.9.8 =
 * Added: Spanish translation
+* Updated: Font Awesome updated to 4.4.0
+* Fixed: buttons line-height on narrow screens
+* Fixed: nested spoilers
 
 = 4.9.7 =
 * Added: [document] is now compatible with https
@@ -484,4 +487,3 @@ Upgrade normally
 
 = 1.0 =
 * Initial release
-
