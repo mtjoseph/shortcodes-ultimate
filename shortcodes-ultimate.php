@@ -1,15 +1,15 @@
 <?php
 /*
-  Plugin Name: Shortcodes Ultimate
-  Plugin URI: http://gndev.info/shortcodes-ultimate/
-  Version: 4.9.8.1
-  Author: Vladimir Anokhin
-  Author URI: http://gndev.info/
-  Description: Supercharge your WordPress theme with mega pack of shortcodes
-  Text Domain: su
-  Domain Path: /languages
-  License: GPL
- */
+Plugin Name: Shortcodes Ultimate
+Plugin URI: http://gndev.info/shortcodes-ultimate/
+Version: 4.9.8.1
+Author: Vladimir Anokhin
+Author URI: http://gndev.info/
+Description: Supercharge your WordPress theme with mega pack of shortcodes
+Text Domain: su
+Domain Path: /languages
+License: GPL
+*/
 
 // Define plugin constants
 define( 'SU_PLUGIN_FILE', __FILE__ );
