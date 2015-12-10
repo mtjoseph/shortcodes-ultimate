@@ -4,7 +4,7 @@ License: GPL
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MMA2VA7JDXWDY
 Tags: shortcode, shortcodes, short code, video, responsive, responsive video, youtube, vimeo, audio, mp3, tab, tabs, button, buttons, jquery, box, boxes, toggle, spoiler, column, columns, services, service, pullquote, list, lists, images, image, links, fancy, fancy link, fancy links, fancy buttons, jquery tabs, accordion, slider, plugin, admin, gallery, bloginfo, list pages, sub pages, navigation, siblings pages, children pages, permalink, permalinks, feed, document, member, members, guests, membership, documents, carousel, rss, touch, icon, icons, trl, right-to-left, multilingual, lang, international
 Requires at least: 3.5
-Tested up to: 4.3
+Tested up to: 4.5
 Stable tag: trunk
 
 Supercharge your WordPress theme with mega pack of shortcodes
@@ -112,6 +112,7 @@ Upgrade normally
 
 = 4.9.9 =
 * Fixed: vote popup at plugins page
+* Minor improvements, fixes
 
 = 4.9.8.1 =
 * Fixed: compatibility with WordPress 4.3+
