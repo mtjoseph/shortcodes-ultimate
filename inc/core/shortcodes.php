@@ -1267,6 +1267,7 @@ class Su_Shortcodes {
 			// Term string to array
 			$tax_term = explode( ',', $tax_term );
 			// Validate operator
+			$tax_operator = str_replace( array( 0, 1, 2 ), array( 'IN', 'NOT IN', 'AND' ), $tax_operator );
 			if ( !in_array( $tax_operator, array( 'IN', 'NOT IN', 'AND' ) ) ) $tax_operator = 'IN';
 			$tax_args = array( 'tax_query' => array( array(
 						'taxonomy' => $taxonomy,
