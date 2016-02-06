@@ -34,22 +34,24 @@ With this plugin you can easily create tabs, buttons, boxes, different sliders, 
 * Works with any theme
 * Easily extendable
 
-= Demo video =
-[youtube http://www.youtube.com/watch?v=h5hlJb0mSSY]
+= Never stop learning =
 
-= What people are saying (blog posts/tutorials) =
+> <strong>Master Shortcodes Ultimate with Advanced Video Course</strong><br>
+> [Open course on udemy.com](http://bit.ly/20MXRWN). This link will give you $50 OFF!
+
 * [40+ Reasons Shortcodes Ultimate Is A Must Have Plugin](http://www.the-best-web-hosting-service.com/blog/2014/01/ultimateshortcodesreview/)
 * [Show Me the Shortcode](http://thewpchick.com/show-shortcode/) + Video
 * [Shortcodes Ultimate: Ultimatize your written content](http://wisdmlabs.com/blog/how-to-style-wordpress-themes-with-shortcodes-ultimate/)
-* [Add 40+ New Layout Features To WordPress with Shortcodes Ultimate](http://www.makeuseof.com/tag/add-40-new-layout-features-wordpress-shortcodes-ultimate/)
-* [Обзор плагина Shortcodes Ultimate](http://rad-dom.ru/shortcodes-ultimate/) (Ru)
 * [Shortcodes Ultimate Plugin Review](http://kevindankowebdesign.com/shortcodes-ultimate-plugin-review/)
-* [Shortcodes Ultimate — плагин неограниченных возможностей](http://altacademic.ru/shortcodes-ultimate/) (Ru)
+* [Add 4s0+ New Layout Features To WordPress with Shortcodes Ultimate](http://www.makeuseof.com/tag/add-40-new-layout-features-wordpress-shortcodes-ultimate/)
 * [Shortcodes Ultimate – Free Shortcode Plugin For WordPress](http://www.wordpress-masterclass.com/shortcodes-ultimate-free-shortcode-plugin-for-wordpress/)
-* [Shortcodes Ultimate – Newest Update Broke My Website](http://4spotmarketing.com/shortcodes-ultimate-stopped-working-and-the-update-broke-my-website/)
-* Video: [Shortcodes Ultimate Tutorial](http://www.youtube.com/watch?v=IjmaXz-b55I)
-* Video: [How to use special widget](http://www.youtube.com/watch?v=YU3Zu6C5ZfA)
-* Video: [How to create image gallery](http://www.youtube.com/watch?v=kCWyO2F7jTw)
+* (Video) [Supercharge WordPress With A Mega Pack Of Shortcodes!](https://www.youtube.com/watch?v=h5hlJb0mSSY)
+* (Video) [Shortcodes Ultimate Tutorial](http://www.youtube.com/watch?v=IjmaXz-b55I)
+* (Video) [How to use special widget](http://www.youtube.com/watch?v=YU3Zu6C5ZfA)
+* (Video) [How to create image gallery](http://www.youtube.com/watch?v=kCWyO2F7jTw)
+* (RU) [Shortcodes Ultimate — плагин неограниченных возможностей](http://altacademic.ru/shortcodes-ultimate/)
+* (RU) [Обзор плагина Shortcodes Ultimate](http://rad-dom.ru/shortcodes-ultimate/)
+* (RU) [Шорткоды Wordpress](http://somemoreinfo.ru/shortkody-wordpress-ot-anoxina/)
 
 = Requirements =
 * WordPress 3.5+
@@ -105,7 +107,7 @@ Upgrade normally
 
 == Frequently Asked Questions ==
 
-[Visit support forum](http://wordpress.org/support/plugin/shortcodes-ultimate/)
+[Visit knowledge base](http://gndev.info/kb/)
 
 
 == Changelog ==
