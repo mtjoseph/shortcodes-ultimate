@@ -17,9 +17,10 @@ Supercharge your WordPress theme with mega pack of shortcodes
 With this plugin you can easily create tabs, buttons, boxes, different sliders, responsive videos and much, much more. Turn your free theme to premium in just a few clicks. Using Shortcodes Ultimate you can quickly and easily retrieve premium themes features and display it on your site. See screenshots for more information.
 
 = Premium Add-ons =
-* __[Extra Shortcodes](http://gndev.info/shortcodes-ultimate/extra/)__ - 15+ additional shortcodes
-* __[Additional Skins](http://gndev.info/shortcodes-ultimate/skins/)__ - 60+ additional skins for plugin shortcodes
-* __[Shortcode Creator](http://gndev.info/shortcodes-ultimate/maker/)__ - allows you to create your own custom shortcodes
+* [Extra Shortcodes](http://gndev.info/shortcodes-ultimate/extra/) - 15+ additional shortcodes
+* [Additional Skins](http://gndev.info/shortcodes-ultimate/skins/) - 60+ additional skins for plugin shortcodes
+* [Shortcode Creator](http://gndev.info/shortcodes-ultimate/maker/) - allows you to create your own custom shortcodes
+* __[Add-ons Bundle](http://gndev.info/shortcodes-ultimate/add-ons-bundle/)__ - All-in-one, $15 OFF!
 
 = Features =
 * 50+ amazing shortcodes
