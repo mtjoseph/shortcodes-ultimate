@@ -37,9 +37,6 @@ With this plugin you can easily create tabs, buttons, boxes, different sliders, 
 
 = Never stop learning =
 
-> <strong>Master Shortcodes Ultimate with Advanced Video Course</strong><br>
-> [Open course on udemy.com](http://bit.ly/20MXRWN). This link will give you $50 OFF!
-
 * [40+ Reasons Shortcodes Ultimate Is A Must Have Plugin](http://www.the-best-web-hosting-service.com/blog/2014/01/ultimateshortcodesreview/)
 * [Show Me the Shortcode](http://thewpchick.com/show-shortcode/) + Video
 * [Shortcodes Ultimate: Ultimatize your written content](http://wisdmlabs.com/blog/how-to-style-wordpress-themes-with-shortcodes-ultimate/)
@@ -50,8 +47,8 @@ With this plugin you can easily create tabs, buttons, boxes, different sliders, 
 * (Video) [Shortcodes Ultimate Tutorial](http://www.youtube.com/watch?v=IjmaXz-b55I)
 * (Video) [How to use special widget](http://www.youtube.com/watch?v=YU3Zu6C5ZfA)
 * (Video) [How to create image gallery](http://www.youtube.com/watch?v=kCWyO2F7jTw)
-* (RU) [Shortcodes Ultimate — плагин неограниченных возможностей](http://altacademic.ru/shortcodes-ultimate/)
 * (RU) [Обзор плагина Shortcodes Ultimate](http://rad-dom.ru/shortcodes-ultimate/)
+* (RU) [Shortcodes Ultimate — плагин неограниченных возможностей](http://altacademic.ru/shortcodes-ultimate/)
 * (RU) [Шорткоды Wordpress](http://somemoreinfo.ru/shortkody-wordpress-ot-anoxina/)
 
 = Requirements =
