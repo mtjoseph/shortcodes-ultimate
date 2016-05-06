@@ -684,6 +684,15 @@ class Su_Tools {
 		if ( !is_array( $args['source'] ) ) return $slides;
 		// Default posts query
 		$query = array( 'posts_per_page' => $args['limit'] );
+		// Retrieve only posts with thumbnail
+		$query['meta_query'] = array( array( 'key' => '_thumbnail_id' ) );
+		// Source: media
+		if ( $args['source']['type'] === 'media' ) {
+			$query['post_type'] = 'attachment';
+			$query['post_status'] = 'any';
+			$query['post__in'] = (array) explode( ',', $args['source']['val'] );
+			$query['orderby'] = 'post__in';
+		}		
 		// Source: media
 		if ( $args['source']['type'] === 'media' ) {
 			$query['post_type'] = 'attachment';
